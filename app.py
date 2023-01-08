@@ -1,7 +1,8 @@
 from flask import Flask, request, redirect
 from flask.templating import render_template
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate, migrate
+from flask_migrate import Migrate
+import logging as logger
 
 app = Flask(__name__)
 app.debug = True
@@ -79,4 +80,6 @@ def erase(id):
 
 
 if __name__ == '__main__':
-    app.run()
+    logger.debug("Starting Flask Server")
+
+    app.run(host="0.0.0.0", port=5001, debug=True, use_reloader=True)
