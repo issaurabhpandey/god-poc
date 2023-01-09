@@ -11,7 +11,7 @@ RUN pip3 --no-cache-dir install -r requirements.txt
 RUN chmod +x ./db-script.sh
 RUN ./db-script.sh
 
-EXPOSE 5001
+EXPOSE 5000
 
 ENTRYPOINT ["python3"]
 CMD ["app.py"]
