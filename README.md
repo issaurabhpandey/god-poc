@@ -1,2 +1,2 @@
 # god-poc
-This repo is for GOD Interview pic
+This repo is for GOD Interview poc
